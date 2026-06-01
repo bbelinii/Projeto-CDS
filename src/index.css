@@ -10,6 +10,7 @@
   --color-brand:      #c33126;   /* vermelho do Fusca */
   --color-branddark:  #9e271e;
   --color-flame:      #e8742a;   /* laranja / raios de sol */
+  --color-gold:       #e6b24e;   /* dourado do brasão (Desde 2025 / sol) */
   --color-cream:      #f4e7d0;
   --color-creamsoft:  #cfc4ad;
   --color-paper:      #f6f1e8;
@@ -66,7 +67,7 @@
   /* raios de sol da marca */
   .rays {
     background: repeating-conic-gradient(from 0deg at 50% 32%,
-      rgba(232,116,42,.12) 0deg 6deg, transparent 6deg 12deg);
+      rgba(230,178,78,.14) 0deg 6deg, transparent 6deg 12deg);
     -webkit-mask-image: radial-gradient(60% 50% at 50% 30%, #000 0%, transparent 72%);
             mask-image: radial-gradient(60% 50% at 50% 30%, #000 0%, transparent 72%);
   }

@@ -10,7 +10,7 @@ export default function Servicos() {
       <div className="container-cds">
         <Reveal>
           <p className="font-head uppercase tracking-[3px] text-sm text-[#8a7d6c]">
-            <span className="script text-flame text-xl mr-1.5">O que</span> fazemos
+            <span className="script text-gold text-xl mr-1.5">O que</span> fazemos
           </p>
           <h2 className="text-[2rem] md:text-5xl mt-2 text-ink">Nossos serviços</h2>
           <p className="max-w-2xl mt-4 text-[#5a5048]">

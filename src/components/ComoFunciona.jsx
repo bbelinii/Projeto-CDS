@@ -26,7 +26,7 @@ export default function ComoFunciona() {
       <div className="container-cds">
         <Reveal>
           <p className="font-head uppercase tracking-[3px] text-sm text-[#8a7d6c]">
-            <span className="script text-flame text-xl mr-1.5">Simples</span> assim
+            <span className="script text-gold text-xl mr-1.5">Simples</span> assim
           </p>
           <h2 className="text-[2rem] md:text-5xl mt-2 text-ink">Você não vai até nós.<br className="hidden md:block" /> Nós vamos até você.</h2>
           <p className="max-w-2xl mt-4 text-[#5a5048]">
@@ -50,7 +50,7 @@ export default function ComoFunciona() {
                 transition={{ type: 'spring', stiffness: 280, damping: 20 }}
                 className="group relative h-full bg-white rounded-2xl p-7 border border-paper2 shadow-[0_10px_30px_rgba(40,30,20,0.06)] hover:shadow-[0_20px_44px_rgba(40,30,20,0.14)] hover:border-flame/40 transition-shadow overflow-hidden"
               >
-                <span className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-brand to-flame" />
+                <span className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-brand via-flame to-gold" />
 
                 <div className="flex items-center justify-between mb-5">
                   <span className="inline-flex w-14 h-14 rounded-xl bg-ink items-center justify-center group-hover:bg-brand transition-colors">

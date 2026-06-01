@@ -12,7 +12,7 @@ export default function Faq() {
       <div className="container-cds">
         <Reveal>
           <p className="font-head uppercase tracking-[3px] text-sm text-[#8a7d6c]">
-            <span className="script text-flame text-xl mr-1.5">Ainda na</span> dúvida?
+            <span className="script text-gold text-xl mr-1.5">Ainda na</span> dúvida?
           </p>
           <h2 className="text-[2rem] md:text-5xl mt-2 text-ink">Perguntas frequentes</h2>
         </Reveal>

@@ -52,7 +52,7 @@ export default function Hero() {
         </motion.div>
 
         <motion.p variants={up} className="font-head uppercase tracking-[3px] text-sm text-creamsoft mt-6">
-          <span className="script text-flame text-xl mr-1.5">Desde 2025</span> · Estética Automotiva
+          <span className="script text-gold text-xl mr-1.5">Desde 2025</span> · Estética Automotiva
         </motion.p>
 
         <motion.h1 variants={up} className="text-cream text-[2.9rem] leading-[0.98] md:text-7xl mt-3 drop-shadow-[0_4px_24px_rgba(0,0,0,0.4)]">

@@ -9,7 +9,7 @@ export default function Contato() {
       <div className="container-cds">
         <Reveal>
           <p className="font-head uppercase tracking-[3px] text-sm text-creamsoft">
-            <span className="script text-flame text-xl mr-1.5">Bora</span> agendar?
+            <span className="script text-gold text-xl mr-1.5">Bora</span> agendar?
           </p>
           <h2 className="text-[2rem] md:text-5xl mt-2 text-cream">Fale com a CDS Garage</h2>
           <p className="max-w-2xl mt-4 text-creamsoft">

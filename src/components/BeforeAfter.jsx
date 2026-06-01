@@ -21,7 +21,7 @@ export default function BeforeAfter() {
       <div className="container-cds">
         <Reveal>
           <p className="font-head uppercase tracking-[3px] text-sm text-creamsoft">
-            <span className="script text-flame text-xl mr-1.5">A prova</span> está no resultado
+            <span className="script text-gold text-xl mr-1.5">A prova</span> está no resultado
           </p>
           <h2 className="text-[2rem] md:text-5xl mt-2 text-cream">Antes &amp; Depois</h2>
           <p className="max-w-2xl mt-4 text-creamsoft">

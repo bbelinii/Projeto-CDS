@@ -19,7 +19,7 @@ export default function Domicilio() {
         <div>
           <Reveal>
             <p className="font-head uppercase tracking-[3px] text-sm text-creamsoft">
-              <span className="script text-flame text-xl mr-1.5">A comodidade</span> que você merece
+              <span className="script text-gold text-xl mr-1.5">A comodidade</span> que você merece
             </p>
             <h2 className="text-[2rem] md:text-5xl mt-2 text-cream">
               A CDS vai<br /><span className="text-brand">até a sua porta!</span>

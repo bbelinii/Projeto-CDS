@@ -102,7 +102,7 @@ export default function BookingPage() {
         <div className="absolute inset-0 rays opacity-50 pointer-events-none" aria-hidden />
         <div className="container-cds relative z-10 text-center" ref={topRef}>
           <p className="font-head uppercase tracking-[3px] text-sm text-creamsoft">
-            <span className="script text-flame text-xl mr-1.5">Agende</span> agora mesmo
+            <span className="script text-gold text-xl mr-1.5">Agende</span> agora mesmo
           </p>
           <h1 className="text-cream text-[2.4rem] md:text-5xl mt-2">Marque seu horário<br className="hidden sm:block" /> <span className="text-brand">em domicílio</span></h1>
           <p className="max-w-xl mx-auto mt-3 text-creamsoft">

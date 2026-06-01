@@ -9,7 +9,7 @@ export default function Sobre() {
       <div className="container-cds grid lg:grid-cols-2 gap-12 items-center">
         <Reveal>
           <p className="font-head uppercase tracking-[3px] text-sm text-[#8a7d6c]">
-            <span className="script text-flame text-xl mr-1.5">Quem</span> somos
+            <span className="script text-gold text-xl mr-1.5">Quem</span> somos
           </p>
           <h2 className="text-[2rem] md:text-5xl mt-2 text-ink">A CDS Garage</h2>
           <p className="mt-4 text-[#5a5048]">
