@@ -1,0 +1,94 @@
+@import "tailwindcss";
+
+/* ===========================================================
+   CDS GARAGE — Tema (garagem vintage)
+   =========================================================== */
+@theme {
+  --color-ink:        #141210;
+  --color-ink2:       #1d1916;
+  --color-ink3:       #2a2420;
+  --color-brand:      #c33126;   /* vermelho do Fusca */
+  --color-branddark:  #9e271e;
+  --color-flame:      #e8742a;   /* laranja / raios de sol */
+  --color-cream:      #f4e7d0;
+  --color-creamsoft:  #cfc4ad;
+  --color-paper:      #f6f1e8;
+  --color-paper2:     #ece3d2;
+  --color-wa:         #25d366;
+  --color-wadark:     #1da851;
+
+  --font-display: "Anton", system-ui, sans-serif;
+  --font-head:    "Oswald", system-ui, sans-serif;
+  --font-body:    "Barlow", system-ui, sans-serif;
+  --font-script:  "Kaushan Script", cursive;
+}
+
+@layer base {
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--color-ink);
+    color: var(--color-cream);
+    font-family: var(--font-body);
+    font-size: 17px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
+  h1, h2, h3 {
+    font-family: var(--font-display);
+    text-transform: uppercase;
+    line-height: 1.02;
+    letter-spacing: .5px;
+    margin: 0;
+  }
+  ::selection { background: var(--color-brand); color: #fff; }
+}
+
+@layer utilities {
+  .script { font-family: var(--font-script); text-transform: none; letter-spacing: 0; }
+  .font-head { font-family: var(--font-head); }
+  .container-cds { width: 100%; max-width: 1140px; margin-inline: auto; padding-inline: 20px; }
+
+  /* faixa quadriculada (xadrez de corrida) */
+  .checker {
+    background:
+      repeating-conic-gradient(#161310 0% 25%, var(--color-cream) 0% 50%) 0 0 / 22px 22px;
+  }
+
+  /* leve granulado/textura pra fugir do "cara de IA" */
+  .grain::before {
+    content: "";
+    position: absolute; inset: 0; pointer-events: none; opacity: .035; z-index: 0;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
+
+  /* raios de sol da marca */
+  .rays {
+    background: repeating-conic-gradient(from 0deg at 50% 32%,
+      rgba(232,116,42,.12) 0deg 6deg, transparent 6deg 12deg);
+    -webkit-mask-image: radial-gradient(60% 50% at 50% 30%, #000 0%, transparent 72%);
+            mask-image: radial-gradient(60% 50% at 50% 30%, #000 0%, transparent 72%);
+  }
+
+  /* inputs do agendamento */
+  .cds-input {
+    width: 100%;
+    background: var(--color-ink);
+    border: 1px solid var(--color-ink3);
+    border-radius: 0.6rem;
+    padding: 0.7rem 0.9rem;
+    color: var(--color-cream);
+    font-family: var(--font-body);
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.15s ease;
+  }
+  .cds-input::placeholder { color: rgba(207, 196, 173, 0.45); }
+  .cds-input:focus { border-color: var(--color-flame); }
+}
+
+/* esconde scrollbar horizontal de animações */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}

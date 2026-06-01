@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 800" width="1280" height="800">
+  <defs>
+    <radialGradient id="bgD" cx="50%" cy="34%" r="70%">
+      <stop offset="0" stop-color="#3a2117"/>
+      <stop offset="55%" stop-color="#241711"/>
+      <stop offset="1" stop-color="#16100c"/>
+    </radialGradient>
+    <linearGradient id="carD" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#e0463a"/>
+      <stop offset="0.5" stop-color="#c33126"/>
+      <stop offset="1" stop-color="#7c1d16"/>
+    </linearGradient>
+    <linearGradient id="glass" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#9fd4e6"/>
+      <stop offset="1" stop-color="#3a6b7a"/>
+    </linearGradient>
+  </defs>
+  <rect width="1280" height="800" fill="url(#bgD)"/>
+  <!-- raios de sol sutis -->
+  <g opacity="0.10" fill="#e8742a">
+    <path d="M640 270 L660 0 L620 0 Z"/><path d="M640 270 L880 40 L840 20 Z"/><path d="M640 270 L400 40 L440 20 Z"/>
+    <path d="M640 270 L1040 150 L1010 120 Z"/><path d="M640 270 L240 150 L270 120 Z"/>
+  </g>
+  <!-- chão com reflexo -->
+  <ellipse cx="640" cy="640" rx="440" ry="48" fill="#000" opacity="0.45"/>
+  <ellipse cx="640" cy="612" rx="300" ry="16" fill="#e8742a" opacity="0.18"/>
+  <!-- carro (brilhante/vermelho) -->
+  <g>
+    <path d="M360 560 C360 470 380 430 430 415 C455 330 520 300 600 305 C660 300 700 305 735 330 C800 320 870 345 905 410 C945 425 965 480 965 560 Z" fill="url(#carD)"/>
+    <path d="M520 405 C535 350 575 330 620 332 C675 332 705 350 720 405 Z" fill="url(#glass)"/>
+    <!-- brilho/reflexo -->
+    <path d="M430 430 C470 360 540 332 610 335 C560 360 500 410 470 470 C450 480 438 470 430 430 Z" fill="#fff" opacity="0.28"/>
+    <path d="M780 360 q60 20 120 70" stroke="#fff" stroke-width="6" fill="none" opacity="0.35" stroke-linecap="round"/>
+    <circle cx="470" cy="560" r="80" fill="#15110e"/>
+    <circle cx="470" cy="560" r="40" fill="#33302b"/>
+    <circle cx="470" cy="560" r="40" fill="none" stroke="#c9c2b4" stroke-width="3" opacity="0.5"/>
+    <circle cx="855" cy="560" r="80" fill="#15110e"/>
+    <circle cx="855" cy="560" r="40" fill="#33302b"/>
+    <circle cx="855" cy="560" r="40" fill="none" stroke="#c9c2b4" stroke-width="3" opacity="0.5"/>
+  </g>
+  <!-- brilhos -->
+  <g fill="#fff">
+    <path d="M905 360 l8 18 18 8 -18 8 -8 18 -8 -18 -18 -8 18 -8 Z" opacity="0.85"/>
+    <circle cx="600" cy="350" r="3" opacity="0.7"/>
+  </g>
+  <text x="640" y="730" text-anchor="middle" font-family="Oswald, Arial, sans-serif" font-size="26" letter-spacing="4" fill="#e8742a">ADICIONE SUA FOTO  ·  DEPOIS</text>
+</svg>

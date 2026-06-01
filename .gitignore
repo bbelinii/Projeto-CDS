@@ -1,0 +1,27 @@
+# dependências
+node_modules/
+
+# build (a Vercel gera sozinha)
+dist/
+
+# logs
+*.log
+npm-debug.log*
+
+# SO / editores
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+.claude/
+
+# arquivos temporários / prévias
+*-check.png
+v-*.png
+bk-*.png
+shot-*.png
+preview*.png
+preview*.pdf
+
+# site estático antigo (referência local)
+legacy-html/
